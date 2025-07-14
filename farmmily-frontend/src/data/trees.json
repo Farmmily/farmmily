@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "coconut",
+    "name": "Coconut Tree",
+    "price": "₹3,988",
+    "treeInformation": {
+      "treeAge": "3 years",
+      "estimatedYield": "40-60 coconuts/year",
+      "harvestSeason": "Year-round",
+      "farmingMethod": "Natural, pesticide-free",
+      "farmLocation": "Pollachi, Tamil Nadu"
+    },
+    "description": "Own a fully grown, organically nurtured coconut tree in the rich, fertile soils of Karur, Tamil Nadu — without needing to farm it yourself. Your tree is carefully selected from the healthiest 500 out of 3,000 naturally grown trees on the farm. Grown Naturally With Care Zero chemicals Soil mulched naturally Goats roam freely, acting as weed removers and natural manure providers Native bees enhance pollination and farm biodiversity",
+    "whoIsItFor": "Lovers of fresh coconut and homemade coconut oil. Health-conscious individuals seeking chemical-free produce. Anyone interested in supporting real organic farming. Gifting with purpose and personalization",
+    "whatYouGet": "A 650 sq ft real farm plot, fully maintained for one season. Transparent photo/video updates of your exact plot. Organic crops grown naturally, using mulching bioculture, and native methods. End-of-season harvest delivered to your doorstep. Optional farm visit for families and kids who want to experience real farming",
+    "howToTrustItsOrganic": "We send regular updates and photos so you can watch your fruit grow on your very own tree  - no worries, no guesswork. Farmmily was born to deliver genuinely organic food directly to those who value it, not just  sell it in markets. For over 13 years, we’ve followed sustainable, natural farming, because  organic food is precious, limited, and never meant to be commercialised. With full transparency, we bring you the true taste of nature — grown just for you",
+    "leaseDuration": "12 months",
+    "paymentStructure": "Full Payment Upfront",
+    "funFact": "Every part of the coconut tree is useful, it's called the 'Tree of Life' for a reason!",
+    "faqs": [
+      {
+        "question": "Can I visit my tree?",
+        "answer": "Yes, you can schedule a farm visit anytime during the lease period."
+      },
+      {
+        "question": "What happens after 12 months?",
+        "answer": "You can renew your lease or choose another tree."
+      }
+    ],
+    "images": [
+      "/images/coconutTree/coconut1.png",
+      "/images/coconutTree/coconut2.png",
+      "/images/coconutTree/coconut3.png"
+    ],
+    "isNameBoard": false
+  },
+
+  {
+    "slug": "imam-pasand",
+    "name": "Imam Pasand Mango Tree",
+    "price": "₹7,299",
+    "treeInformation": {
+      "treeAge": "12 years",
+      "estimatedYield": "30-35 kg/year",
+      "harvestSeason": "May - June",
+      "farmingMethod": "Purely natural, Purely Organic",
+      "farmLocation": "Namakkal, Tamil Nadu"
+    },
+    "description": "Own a Premium Alphonso Mango Tree Claim one of only 250 handpicked, fully grown Alphonso mango trees-organically nurtured in the rich, fertile soil of Namakkal, Tamil Nadu. Out of 1,000+ trees, these are the top performers, selected using real harvest data for their yield, health, and fruit quality. Enjoy your own piece of nature and the sweetest returns this season.",
+    "whoIsItFor": "Lovers of the rare, royal, and richly aromatic Imam Pasand mango. People who value organic, chemical-free produce. Anyone looking for an exclusive farm-to-table experience",
+    "whatYouGet": "30-35 kg of premium Imam Pasand mangoes directly from your tree. Approx. 50-65 fruits, hand-harvested and packed with care. Premium customisable gifting box with message card available on request. Regular photo/video updates of your tree throughout the season",
+    "howToTrustItsOrganic": "We send regular updates and photos so you can watch your fruit grow on your very own tree  - no worries, no guesswork. Farmmily was born to deliver genuinely organic food directly to those who value it, not just  sell it in markets. For over 13 years, we've followed sustainable, natural farming, because  organic food is precious, limited, and never meant to be commercialised. With full transparency, we bring you the true taste of nature — grown just for you",
+    "leaseDuration": "Till end of harvest",
+    "paymentStructure": "Full Payment Upfront",
+    "funFact": "Imam Pasand is known as the “King's Mango”, once grown only for royals. With its silky texture, floral aroma, and melt-in-the-mouth sweetness, it's one of the rarest and most premium mango varieties in India.",
+    "faqs": [
+      {
+        "question": "When will I receive the mangoes?",
+        "answer": "During the peak harvest season from May to June."
+      }
+    ],
+    "images": [
+      "/images/imam-pasand/ip1.png",
+      "/images/imam-pasand/ip2.png",
+      "/images/imam-pasand/ip3.png"
+    ],
+    "isNameBoard": true
+  },
+  {
+    "slug": "alphonso-mango",
+    "name": "Alphonso Mango Tree",
+    "price": "₹7,299",
+    "treeInformation": {
+      "treeAge": "12 years",
+      "estimatedYield": "30-35 kg/year",
+      "harvestSeason": "May - June",
+      "farmingMethod": "Purely natural, Purely Organic",
+      "farmLocation": "Namakkal, Tamil Nadu"
+    },
+    "description": "Own a Premium Alphonso Mango Tree Claim one of only 250 handpicked, fully grown Alphonso mango trees-organically nurtured in the rich, fertile soil of Namakkal, Tamil Nadu. Out of 1,000+ trees, these are the top performers, selected using real harvest data for their yield, health, and fruit quality. Enjoy your own piece of nature and the sweetest returns this season.",
+    "whoIsItFor": "Lovers of the rare, royal, and richly aromatic Imam Pasand mango. People who value organic, chemical-free produce. Anyone looking for an exclusive farm-to-table experience",
+    "whatYouGet": "30-35 kg of premium Imam Pasand mangoes directly from your tree. Approx. 50-65 fruits, hand-harvested and packed with care. Premium customisable gifting box with message card available on request. Regular photo/video updates of your tree throughout the season",
+    "howToTrustItsOrganic": "We send regular updates and photos so you can watch your fruit grow on your very own tree  - no worries, no guesswork. Farmmily was born to deliver genuinely organic food directly to those who value it, not just  sell it in markets. For over 13 years, we've followed sustainable, natural farming, because  organic food is precious, limited, and never meant to be commercialised. With full transparency, we bring you the true taste of nature — grown just for you",
+    "leaseDuration": "Till end of harvest",
+    "paymentStructure": "Full Payment Upfront",
+    "funFact": "Imam Pasand is known as the “King's Mango”, once grown only for royals. With its silky texture, floral aroma, and melt-in-the-mouth sweetness, it's one of the rarest and most premium mango varieties in India.",
+    "faqs": [
+      {
+        "question": "When will I receive the mangoes?",
+        "answer": "During the peak harvest season from May to June."
+      }
+    ],
+    "images": [
+      "/images/alphonso/am1.png",
+      "/images/alphonso/am2.png",
+      "/images/alphonso/am3.png"
+    ],
+    "isNameBoard": true
+  },
+  {
+    "slug": "senthura-mango",
+    "name": "Senthura Mango Tree",
+    "price": "₹7,299",
+    "treeInformation": {
+      "treeAge": "10 years",
+      "estimatedYield": "50-60 kg/year",
+      "harvestSeason": "May - July",
+      "farmingMethod": "No chemicals, no shortcuts",
+      "farmLocation": "Namakkal, Tamil Nadu"
+    },
+    "description": "Own a Tree That Feeds Hearts & Homes Not Just Any Tree - One of Our Best 200 from 500+ Senthura Trees Own a fully grown, fruiting Senthura mango tree, organically nurtured for over a decade in the rich, mineral-packed soils of Namakkal, Tamil Nadu. From a grove of more than 500 trees, we've handpicked the top 200 healthiest an",
+    "whoIsItFor": "People who love bold, juicy mangoes with rich flavor. Organic lifestyle believers who want real farm-to-home food. Those who want to gift or enjoy a unique mango experience",
+    "whatYouGet": "50-60 kg of Senthura mangoes delivered directly from your tree. Approx. 80-100 fruits, carefully hand-harvested. Premium customisable gifting box with message card available on request. Regular photo/video updates of your tree throughout the season",
+    "howToTrustItsOrganic": "We send regular updates and photos so you can watch your fruit grow on your very own tree  - no worries, no guesswork. Farmmily was born to deliver genuinely organic food directly to those who value it, not just  sell it in markets. For over 13 years, we've followed sustainable, natural farming, because  organic food is precious, limited, and never meant to be commercialised. With full transparency, we bring you the true taste of nature — grown just for you",
+    "leaseDuration": "Till end of harvest",
+    "paymentStructure": "Full Payment Upfront",
+    "funFact": "Senthura mangoes are known for their deep reddish-golden skin and bold, tangysweet flavor — a beloved local favorite in alphonso/am1",
+    "faqs": [
+      {
+        "question": "When will I receive the mangoes?",
+        "answer": "During the peak harvest season from May to June."
+      }
+    ],
+    "images": [
+      "/images/senthura/sm1.png",
+      "/images/senthura/sm2.png",
+      "/images/senthura/sm3.png"
+    ],
+    "isNameBoard": true
+  },
+  {
+    "slug": "bulk-leasing",
+    "name": "Bulk Leasing",
+    "isBulkLeasing": "false",
+    "price": "7,999",
+    "description": "Own a Tree That Feeds Hearts & Homes Not Just Any Tree - One of Our Best 200 from 500+ Senthura Trees Own a fully grown, fruiting Senthura mango tree, organically nurtured for over a decade in the rich, mineral-packed soils of Namakkal, Tamil Nadu. From a grove of more than 500 trees, we've handpicked the top 200 healthiest an",
+    "whoIsItFor": "People who love bold, juicy mangoes with rich flavor. Organic lifestyle believers who want real farm-to-home food. Those who want to gift or enjoy a unique mango experience",
+    "whatYouGet": "50-60 kg of Senthura mangoes delivered directly from your tree. Approx. 80-100 fruits, carefully hand-harvested. Premium customisable gifting box with message card available on request. Regular photo/video updates of your tree throughout the season",
+    "howToTrustItsOrganic": "We send regular updates and photos so you can watch your fruit grow on your very own tree  - no worries, no guesswork. Farmmily was born to deliver genuinely organic food directly to those who value it, not just  sell it in markets. For over 13 years, we've followed sustainable, natural farming, because  organic food is precious, limited, and never meant to be commercialised. With full transparency, we bring you the true taste of nature — grown just for you",
+    "leaseDuration": "Till end of harvest",
+    "paymentStructure": "Full Payment Upfront",
+    "funFact": "Senthura mangoes are known for their deep reddish-golden skin and bold, tangysweet flavor — a beloved local favorite in alphonso/am1",
+    "faqs": [
+      {
+        "question": "When will I receive the mangoes?",
+        "answer": "During the peak harvest season from May to June."
+      }
+    ],
+    "images": [
+      "/images/bulk-leasing/bl1.jpg",
+      "/images/bulk-leasing/bl2.png",
+      "/images/bulk-leasing/bl3.png"
+    ],
+    "isNameBoard": false
+  }
+]

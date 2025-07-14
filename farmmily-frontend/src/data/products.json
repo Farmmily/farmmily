@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "coconut",
+    "name": "Coconut Tree",
+    "type": "tree",
+    "image": "/images/products/coconut.jpg",
+    "tag": "Tree Leasing",
+    "tagColor": "orange",
+    "description": "Naturally grown coconuts for a healthy lifestyle."
+  },
+  {
+    "slug": "imam-pasand",
+    "name": "Imam Pasand Mango Tree",
+    "type": "tree",
+    "image": "/images/products/senthura.png",
+    "tag": "Tree Leasing",
+    "tagColor": "orange",
+    "description": "Premium mango variety grown sustainably."
+  },
+  {
+    "slug": "alphonso-mango",
+    "name": "Alphonso Mango Tree",
+    "type": "tree",
+    "image": "/images/products/senthura.png",
+    "tag": "Tree Leasing",
+    "tagColor": "orange",
+    "description": "Premium mango variety grown sustainably."
+  },
+  {
+    "slug": "senthura-mango",
+    "name": "Senthura Mango Tree",
+    "type": "tree",
+    "image": "/images/products/senthura.png",
+    "tag": "Tree Leasing",
+    "tagColor": "orange",
+    "description": "Premium mango variety grown sustainably."
+  },
+  {
+    "slug": "bee-hive",
+    "name": "Own a Bee Hive",
+    "type": "beehive",
+    "image": "/images/products/beehive.jpg",
+    "tag": "Bee Hive",
+    "tagColor": "#929e21",
+    "description": "Get pure honey from your own leased hive."
+  },
+  {
+    "slug": "mini-plot",
+    "name": "Mini Farm Plot",
+    "type": "mini-plot",
+    "image": "/images/products/minifarm.png",
+    "tag": "Farm Leasing",
+    "tagColor": "green",
+    "description": "Experience owning a small piece of nature."
+  },
+  {
+    "slug": "bulk-leasing",
+    "name": "Bulk Leasing",
+    "type": "tree",
+    "image": "/images/products/bulklease.jpg",
+    "tag": "Bulk Solution",
+    "tagColor": "red",
+    "description": "Ideal for communities or businesses to lease in bulk."
+  }
+]

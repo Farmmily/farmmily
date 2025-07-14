@@ -1,0 +1,17 @@
+.dented-card {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.dented-card::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff; /* Match card background */
+  border-radius: 50%;
+  z-index: 1;
+}

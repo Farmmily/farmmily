@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.dented-corner {
+  position: relative;
+  clip-path: path("M0 0 H100% V0 Q90% 10% 80% 0 H0 Z");
+}
