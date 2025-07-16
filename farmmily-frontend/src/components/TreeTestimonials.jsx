@@ -46,11 +46,11 @@ const TreeTestimonials = ({ treeName }) => {
               className="w-[300px] min-w-[300px] bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0"
             >
               <div className="flex items-start gap-3 mb-3">
-                <img
+{/*                 <img
                   src={t.image}
                   alt={t.name}
                   className="w-12 h-12 rounded-full object-cover"
-                />
+                /> */}
                 <div>
                   <p className="font-semibold text-sm">{t.name}</p>
                   <p className="text-xs text-gray-500">{t.location}</p>
