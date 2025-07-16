@@ -14,7 +14,7 @@ const BeeHive = () => {
     <>
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Image Section */}
-        <div className="flex flex-col md:flex-row gap-4 mb-6">
+        <div className="flex flex-col gap-4 mb-6 md:flex-row">
           {/* Main Image */}
           <div className="w-full md:w-4/5">
             <img
@@ -25,20 +25,19 @@ const BeeHive = () => {
           </div>
 
           {/* Side Images */}
-          <div className="w-full md:w-1/5 flex md:flex-col gap-4">
+          <div className="w-full flex gap-4 md:w-1/5 md:flex-col">
             <img
               src="/images/beehive/beehive2.png"
               alt="Side 1"
-              className="w-1/2 md:w-full object-cover rounded-lg"
+              className="w-1/2 md:h-1/2 md:w-full object-cover rounded-lg"
             />
             <img
               src="/images/beehive/beehive3.png"
               alt="Side 2"
-              className="w-1/2 md:w-full object-cover rounded-lg"
+              className="w-1/2 md:h-1/2 md:w-full object-cover rounded-lg overflow-hidden"
             />
           </div>
         </div>
-
         {/* Info & Button Section */}
         <>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
