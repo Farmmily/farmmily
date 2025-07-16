@@ -14,9 +14,9 @@ const BeeHive = () => {
     <>
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* Image Section */}
-        <div className="flex gap-4 mb-6">
+        <div className="flex flex-col md:flex-row gap-4 mb-6">
           {/* Main Image */}
-          <div className="w-4/5">
+          <div className="w-full md:w-4/5">
             <img
               src="/images/beehive/beehive1.png"
               alt="Bee hive"
@@ -25,34 +25,37 @@ const BeeHive = () => {
           </div>
 
           {/* Side Images */}
-          <div className="w-1/5 flex flex-col gap-4">
+          <div className="w-full md:w-1/5 flex md:flex-col gap-4">
             <img
               src="/images/beehive/beehive2.png"
               alt="Side 1"
-              className="h-1/2 object-cover rounded-lg"
+              className="w-1/2 md:w-full object-cover rounded-lg"
             />
             <img
               src="/images/beehive/beehive3.png"
               alt="Side 2"
-              className="h-1/2 object-cover rounded-lg"
+              className="w-1/2 md:w-full object-cover rounded-lg"
             />
           </div>
         </div>
+
+        {/* Info & Button Section */}
         <>
-          <div className="flex justify-between items-start">
-            {/* Left side: Tree info */}
-            <div>
-              <h1 className="text-4xl font-bold text-green-800">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+            {/* Left: Tree Info */}
+            <div className="text-center sm:text-left">
+              <h1 className="text-3xl sm:text-4xl font-bold text-green-800">
                 {beeHive.name}
               </h1>
-              <p className="text-gray-600 text-sm pl-1">
+              <p className="text-gray-600 text-sm sm:pl-1">
                 by <span className="font-medium">Farmmily</span>
               </p>
             </div>
 
-            <div className="flex gap-4 ">
+            {/* Right: Button */}
+            <div className="flex justify-center sm:justify-end">
               <button
-                className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-3 rounded w-64 flex items-center justify-center gap-2 transition h-14"
+                className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-3 rounded w-1/2 sm:w-64 flex items-center justify-center gap-2 transition h-14"
                 onClick={() => {
                   setMessageType("buy");
                   setMessage(buyMessage);

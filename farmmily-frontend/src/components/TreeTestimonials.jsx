@@ -6,28 +6,24 @@ const testimonials = [
     location: "Chennai",
     year: "2024",
     message: "Absolutely loved the freshness and transparency from Farmmily!",
-    image: "/images/testimonialImages/testImg1.png",
   },
   {
     name: "Anjali Mehta",
     location: "Mumbai",
     year: "2023",
     message: "It’s amazing to own a tree and get real produce delivered!",
-    image: "/images/testimonialImages/testImg2.png",
   },
   {
     name: "Vikram Singh",
     location: "Delhi",
     year: "2024",
     message: "Farmmily has changed the way I look at food sourcing.",
-    image: "/images/testimonialImages/testImg3.png",
   },
   {
     name: "Preeti Sharma",
     location: "Bengaluru",
     year: "2022",
     message: "Leasing a tree was the best decision for my family!",
-    image: "/images/testimonialImages/testImg4.png",
   },
 ];
 
@@ -46,7 +42,7 @@ const TreeTestimonials = ({ treeName }) => {
               className="w-[300px] min-w-[300px] bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0"
             >
               <div className="flex items-start gap-3 mb-3">
-{/*                 <img
+                {/*                 <img
                   src={t.image}
                   alt={t.name}
                   className="w-12 h-12 rounded-full object-cover"
@@ -68,11 +64,11 @@ const TreeTestimonials = ({ treeName }) => {
               className="w-[300px] min-w-[300px] bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0"
             >
               <div className="flex items-start gap-3 mb-3">
-                <img
+                {/* <img
                   src={t.image}
                   alt={t.name}
                   className="w-12 h-12 rounded-full object-cover"
-                />
+                /> */}
                 <div>
                   <p className="font-semibold text-sm">{t.name}</p>
                   <p className="text-xs text-gray-500">{t.location}</p>

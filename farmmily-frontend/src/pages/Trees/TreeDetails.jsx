@@ -90,7 +90,7 @@ const TreeDetails = () => {
                   className="h-14 border border-green-700 text-green-700 px-4 py-3 rounded w-48 flex items-center justify-center gap-2 hover:bg-green-50 transition"
                   onClick={() => {
                     setMessageType("gift");
-                    setMessage(giftMessage); // if needed elsewhere in UI
+                    setMessage(giftMessage);
 
                     const encodedMessage = encodeURIComponent(giftMessage);
                     const whatsappLink = `${import.meta.env.VITE_WHATSAPP_URI}${

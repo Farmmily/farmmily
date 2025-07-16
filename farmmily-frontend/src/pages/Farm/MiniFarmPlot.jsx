@@ -25,20 +25,21 @@ const MiniFarmPlot = () => {
           </div>
         </div>
         <>
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
             {/* Left side: Tree info */}
-            <div>
-              <h1 className="text-4xl font-bold text-green-800">
+            <div className="text-center sm:text-left">
+              <h1 className="text-3xl sm:text-4xl font-bold text-green-800">
                 {miniFarm.name}
               </h1>
-              <p className="text-gray-600 text-sm pl-1">
+              <p className="text-gray-600 text-sm sm:pl-1">
                 by <span className="font-medium">Farmmily</span>
               </p>
             </div>
 
-            <div className="flex gap-4 ">
+            {/* Right side: Button */}
+            <div className="flex justify-center sm:justify-end">
               <button
-                className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-3 rounded w-64 flex items-center justify-center gap-2 transition h-14"
+                className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-3 rounded w-1/2 sm:w-64 flex items-center justify-center gap-2 transition h-14"
                 onClick={() => {
                   setMessageType("buy");
                   setMessage(buyMessage);

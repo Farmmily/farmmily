@@ -9,13 +9,13 @@ const ExploreProducts = () => {
   const displayedProducts = otherProducts.slice(0, 4);
 
   return (
-    <section className="py-12">
+    <section className="py-12 justify-center">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
           Products
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+        <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
           {displayedProducts.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
