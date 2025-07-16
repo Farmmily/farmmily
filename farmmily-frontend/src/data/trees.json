@@ -19,12 +19,20 @@
     "funFact": "Every part of the coconut tree is useful, it's called the 'Tree of Life' for a reason!",
     "faqs": [
       {
-        "question": "Can I visit my tree?",
-        "answer": "Yes, you can schedule a farm visit anytime during the lease period."
+        "question": "I may not want the full harvest every year, can I get other fruits instead?",
+        "answer": "Absolutely. You can sell the extra coconuts to Farmmily. You'll earn credits to redeem on mangoes, other organic products, or even farm experiences."
       },
       {
-        "question": "What happens after 12 months?",
+        "question": "What if my coconut tree doesn't produce well this year?",
         "answer": "You can renew your lease or choose another tree."
+      },
+      {
+        "question": "How do I know the coconuts are really from my tree?",
+        "answer": "You get photo/video updates tracking your tree — from flowering to harvest. 100% transparency."
+      },
+      {
+        "question": "How can I trust Farmmily's organic farming claims?",
+        "answer": "No chemicals. No shortcuts. Our goats weed naturally, soils are mulched, and native bees thrive. You’ll see the difference."
       }
     ],
     "images": [
@@ -55,8 +63,20 @@
     "funFact": "Imam Pasand is known as the “King's Mango”, once grown only for royals. With its silky texture, floral aroma, and melt-in-the-mouth sweetness, it's one of the rarest and most premium mango varieties in India.",
     "faqs": [
       {
-        "question": "When will I receive the mangoes?",
-        "answer": "During the peak harvest season from May to June."
+        "question": "I may not need the full harvest — what can I do?",
+        "answer": "You can sell your extra 30-35 kg mangoes back to Farmmily. We share them with local farmers at fair prices, and you earn Farmmily credits to use on other organic goodies."
+      },
+      {
+        "question": "What if my Imam Pasand tree doesn’t bear fruit this year?",
+        "answer": "If your tree doesn’t flower by March, we’ll replace it with a high-performing tree from our farm. No stress — just real farming with care."
+      },
+      {
+        "question": "How do I know the fruits are really from my tree?",
+        "answer": "You’ll receive regular photo and video updates from flowering to harvest. You can literally watch your fruits grow — 100% transparent."
+      },
+      {
+        "question": "How do I trust Farmmily’s organic practices?",
+        "answer": "We don’t just say “organic” — we show it. No shortcuts. No chemicals. Only natural care. Your support inspires more farmers to go organic."
       }
     ],
     "images": [
@@ -88,6 +108,18 @@
       {
         "question": "When will I receive the mangoes?",
         "answer": "During the peak harvest season from May to June."
+      },
+      {
+        "question": "How do I know the fruits are really from my tree?",
+        "answer": "You’ll receive regular photo and video updates from flowering to harvest. You can literally watch your fruits grow — 100% transparent."
+      },
+      {
+        "question": "How do I trust Farmmily’s organic practices?",
+        "answer": "We don’t just say “organic” — we show it. No shortcuts. No chemicals. Only natural care. Your support inspires more farmers to go organic."
+      },
+      {
+        "question": "How are the mangoes packaged and delivered?",
+        "answer": "The mangoes are hand-harvested, carefully packed in eco-friendly boxes, and delivered directly to your doorstep via our trusted logistics partners."
       }
     ],
     "images": [
@@ -119,6 +151,18 @@
       {
         "question": "When will I receive the mangoes?",
         "answer": "During the peak harvest season from May to June."
+      },
+      {
+        "question": "My Senthura tree yields around 60 kg. Can I get other fruits instead?",
+        "answer": "Yes! Sell back your extra mangoes for Farmmily credits. Use those to get other varieties or fruits. Even if your tree grows one fruit, you can enjoy many!"
+      },
+      {
+        "question": "How do I know the fruits are really from my tree?",
+        "answer": "You’ll receive regular photo and video updates from flowering to harvest. You can literally watch your fruits grow — 100% transparent."
+      },
+      {
+        "question": "How do I trust Farmmily’s organic practices?",
+        "answer": "We don’t just say “organic” — we show it. No shortcuts. No chemicals. Only natural care. Your support inspires more farmers to go organic."
       }
     ],
     "images": [
@@ -142,8 +186,20 @@
     "funFact": "Senthura mangoes are known for their deep reddish-golden skin and bold, tangysweet flavor — a beloved local favorite in alphonso/am1",
     "faqs": [
       {
-        "question": "When will I receive the mangoes?",
-        "answer": "During the peak harvest season from May to June."
+        "question": "Will I get updates about my tree?",
+        "answer": "Absolutely! We’ll send regular photo and video updates throughout the season so you can see how your tree is doing."
+      },
+      {
+        "question": "Can I lease more than one tree?",
+        "answer": "Yes, you can lease multiple trees. Bulk options are available for families, gifting, or community sharing."
+      },
+      {
+        "question": "Are these mangoes chemically ripened?",
+        "answer": "Not at all. All mangoes are naturally ripened using traditional methods — no chemicals, no artificial processes."
+      },
+      {
+        "question": "Is there a refund policy?",
+        "answer": "Since this is a seasonal and limited experience, we do not offer refunds. However, customer satisfaction is a priority, and we’re always here to resolve concerns."
       }
     ],
     "images": [
