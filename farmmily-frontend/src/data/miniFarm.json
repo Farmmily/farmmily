@@ -11,8 +11,24 @@
   "paymentStructure": "Full Payment Upfront",
   "faqs": [
     {
-      "question": "When will I receive the plot?",
-      "answer": "During the peak harvest season from May to June."
+      "question": "Can I choose the crops for my plot?",
+      "answer": "We guide you based on soil, season, and natural compatibility — while keeping you informed."
+    },
+    {
+      "question": "Is the plot mine to visit?",
+      "answer": "Yes! Come anytime during the season to see your crops and meet the farmers."
+    },
+    {
+      "question": "What if I can’t use all the produce?",
+      "answer": "Donate, gift, or resell the extra via Farmmily credits."
+    },
+    {
+      "question": "Is this better than buying from organic stores?",
+      "answer": "100%. You know where your food is from, how it’s grown, and who grew it."
+    },
+    {
+      "question": "Can I lease again next season?",
+      "answer": "Definitely! Many families come back every season. It’s a journey, not just one harvest."
     }
   ],
   "images": [],
