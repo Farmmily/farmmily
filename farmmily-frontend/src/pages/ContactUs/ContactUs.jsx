@@ -26,11 +26,11 @@ const ContactUs = () => {
           <div className="max-w-md mb-30 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Address</h2>
             <h3 className="text-xl md:text-2xl font-semibold mb-6">
-              Farmmily Farms & Foods
+              FARMMILY FARMS AND FOODS
             </h3>
             <p className="text-sm md:text-base leading-relaxed">
-              1401, Kamatchipuram, Sendamangalam West Village, Pallapati Via,
-              Aravakurichi Taluk, Karur - 639205, Tamil Nadu, India
+              1401, Kamatchipuram, Sendamangalam West Village, Pallapatti Via,
+              Aravakurichi Taluk, Karur – 639205
             </p>
           </div>
 

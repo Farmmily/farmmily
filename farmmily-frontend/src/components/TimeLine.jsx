@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Timeline = () => {
+export default function TimeLine() {
   const [selectedStep, setSelectedStep] = useState(0);
 
   const timelineSteps = [
@@ -64,7 +64,7 @@ const Timeline = () => {
           <div
             key={index}
             className={`hidden sm:block absolute top-10 h-0.5 z-10 transition-all duration-300 ${
-              index <= selectedStep ? "bg-green-500" : "bg-transparent"
+              index < selectedStep ? "bg-green-500" : "bg-transparent"
             }`}
             style={{
               left: `${(index / (timelineSteps.length - 1)) * 100}%`,
@@ -118,6 +118,4 @@ const Timeline = () => {
       </div>
     </div>
   );
-};
-
-export default Timeline;
+}

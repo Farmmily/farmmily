@@ -145,7 +145,9 @@ const About = () => {
       <section className="bg-[#f7f7f7] py-16 px-6">
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
-            <h3 className="text-3xl font-bold mb-4">Ready to Grow With Us?</h3>
+            <h3 className="text-3xl font-bold mb-4">
+              Ready to build your farm with us?
+            </h3>
             <p className="text-gray-700 mb-6">
               Whether you’re looking to own a tree, host a farm stay, or become
               a full-fledged farmer — Farmmily welcomes you with open fields.

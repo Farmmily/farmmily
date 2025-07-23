@@ -93,7 +93,7 @@ export default function Footer() {
             <FaFacebookF />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/farmmily"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
@@ -109,7 +109,7 @@ export default function Footer() {
             <FaTwitter />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/farmmily/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"

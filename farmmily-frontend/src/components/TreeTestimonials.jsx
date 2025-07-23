@@ -13,18 +13,18 @@ const testimonials = [
     year: "2023",
     message: "It’s amazing to own a tree and get real produce delivered!",
   },
-  {
-    name: "Vikram Singh",
-    location: "Delhi",
-    year: "2024",
-    message: "Farmmily has changed the way I look at food sourcing.",
-  },
-  {
-    name: "Preeti Sharma",
-    location: "Bengaluru",
-    year: "2022",
-    message: "Leasing a tree was the best decision for my family!",
-  },
+  // {
+  //   name: "Vikram Singh",
+  //   location: "Delhi",
+  //   year: "2024",
+  //   message: "Farmmily has changed the way I look at food sourcing.",
+  // },
+  // {
+  //   name: "Preeti Sharma",
+  //   location: "Bengaluru",
+  //   year: "2022",
+  //   message: "Leasing a tree was the best decision for my family!",
+  // },
 ];
 
 const TreeTestimonials = ({ treeName }) => {
@@ -34,14 +34,14 @@ const TreeTestimonials = ({ treeName }) => {
         Voices of our <span className="text-green-700">{treeName}</span> family
       </h2>
 
-      <div className="overflow-x-auto scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none]">
-        <div className="flex gap-6 px-6 w-max">
+      <div className="w-full items-center">
+        <div className="flex gap-6 px-6 items-center justify-center">
           {testimonials.map((t, index) => (
             <div
               key={index}
               className="w-[300px] min-w-[300px] bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0"
             >
-              <div className="flex items-start gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-3 w-screen">
                 {/*                 <img
                   src={t.image}
                   alt={t.name}
@@ -58,7 +58,7 @@ const TreeTestimonials = ({ treeName }) => {
           ))}
 
           {/* Optional looping for infinite feel */}
-          {testimonials.map((t, index) => (
+          {/* {testimonials.map((t, index) => (
             <div
               key={"loop-" + index}
               className="w-[300px] min-w-[300px] bg-gray-100 p-4 rounded-md shadow-md flex-shrink-0"
@@ -69,7 +69,7 @@ const TreeTestimonials = ({ treeName }) => {
                   alt={t.name}
                   className="w-12 h-12 rounded-full object-cover"
                 /> */}
-                <div>
+          {/* <div>
                   <p className="font-semibold text-sm">{t.name}</p>
                   <p className="text-xs text-gray-500">{t.location}</p>
                 </div>
@@ -77,7 +77,7 @@ const TreeTestimonials = ({ treeName }) => {
               <p className="text-sm mb-4">{t.message}</p>
               <p className="text-xs text-gray-400">Leased in {t.year}</p>
             </div>
-          ))}
+          ))}  */}
         </div>
       </div>
     </div>

@@ -22,8 +22,10 @@ const Home = () => {
         heroImage={HeroImage}
         heading="Land to Livelihood"
         subHeading="Farm development & management for NRIs, investors & landowners, done right in South India."
-        button1="Own a Farm"
+        button1="Explore Our Services"
         button2="Contact Us"
+        b1Link={"farm-services"}
+        b2Link={"contact-us"}
       />
       <CoreServicesHome />
       <HomeTreeStrip />

@@ -2,37 +2,37 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Aarav Sharma",
-    role: "Tree Owner",
+    name: "Siddharth R., Singapore",
+    role: "NRI Landowner",
     rating: 5,
     message:
-      "Farmmily made it so easy to own a tree remotely. I get updates regularly and feel connected to nature.",
+      "As an NRI, I had no idea how to develop my land back home. Farmmily turned my barren 24.5 acres into a fruit orchard with irrigation, fencing, and planting, all without me needing to travel. Their updates were regular, transparent, and the team treated my land like their own.",
     img: "/images/testimonialImages/testImg1.png",
   },
   {
-    name: "Meera Reddy",
-    role: "Farmer",
+    name: "Divya K., Chennai",
+    role: "Busy Investor",
     rating: 4,
     message:
-      "I was able to lease my land easily and get great support. Farmmily is changing lives!",
+      "I wanted to invest in farmland but didn’t have time to manage it. Farmmily’s team helped me plan everything from scratch and now fully manages my farm. I get monthly reports, photos, and real income from something I used to ignore. Highly recommend their professionalism and execution",
     img: "/images/testimonialImages/testImg2.png",
   },
-  {
-    name: "Rohan Das",
-    role: "Tree Owner",
-    rating: 5,
-    message:
-      "Their agro-tourism and transparency made me a loyal supporter. It’s more than just buying a product.",
-    img: "/images/testimonialImages/testImg3.png",
-  },
-  {
-    name: "Kavya Iyer",
-    role: "Farmer",
-    rating: 4,
-    message:
-      "It feels great to work with a platform that really cares about sustainable farming.",
-    img: "/images/testimonialImages/testImg4.png",
-  },
+  // {
+  //   name: "Rohan Das",
+  //   role: "Tree Owner",
+  //   rating: 5,
+  //   message:
+  //     "Their agro-tourism and transparency made me a loyal supporter. It’s more than just buying a product.",
+  //   img: "/images/testimonialImages/testImg3.png",
+  // },
+  // {
+  //   name: "Kavya Iyer",
+  //   role: "Farmer",
+  //   rating: 4,
+  //   message:
+  //     "It feels great to work with a platform that really cares about sustainable farming.",
+  //   img: "/images/testimonialImages/testImg4.png",
+  // },
 ];
 
 export default function Testimonials() {

@@ -16,8 +16,10 @@ const Farms = () => {
         heroImage={HeroFarm}
         heading="Welcome to Farming Without the Hassle"
         subHeading="Lease a tree or plot. We’ll farm it for you — naturally and transparently."
-        button1="Own a Farm"
+        button1="Lease your Farm"
         button2="Contact Us"
+        b1Link={"mini-plot"}
+        b2Link={"contact-us"}
       />
       <OurProductsSection />
       <Timeline />

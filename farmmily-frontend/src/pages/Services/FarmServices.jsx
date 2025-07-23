@@ -79,7 +79,7 @@ const FarmServices = () => {
               <h3 className="text-base font-semibold mb-2 text-center">
                 8+ farms successfully developed from scratch across Tamil Nadu
                 <br />
-                Best for:
+                <div className="text-left ml-8">Best for:</div>
               </h3>
               <ul className="space-y-1 pl-4 text-sm lg:text-base">
                 {[
@@ -149,7 +149,7 @@ const FarmServices = () => {
               <h3 className="text-base font-semibold mb-2 text-center">
                 250+ acres managed across Tamil Nadu, Kerala & Karnataka
                 <br />
-                Best for:
+                <div className="text-left ml-8">Best for:</div>
               </h3>
               <ul className="space-y-1 pl-4 text-sm lg:text-base">
                 {["NRIs", "Busy professionals", "Passive landowners"].map(
@@ -218,7 +218,7 @@ const FarmServices = () => {
               <h3 className="text-base font-semibold mb-2 text-center">
                 Led by senior consultants with 25+ years of experience
                 <br />
-                Best for:
+                <div className="text-left ml-8">Best for:</div>
               </h3>
               <ul className="space-y-1 pl-4 text-sm lg:text-base">
                 {[

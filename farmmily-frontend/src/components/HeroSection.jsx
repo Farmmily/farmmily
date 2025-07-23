@@ -1,6 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
-const HeroSection = ({ heroImage, heading, subHeading, button1, button2 }) => {
+const HeroSection = ({
+  heroImage,
+  heading,
+  subHeading,
+  button1,
+  button2,
+  b1Link,
+  b2Link,
+}) => {
   const navigate = useNavigate();
 
   return (
@@ -31,13 +39,13 @@ const HeroSection = ({ heroImage, heading, subHeading, button1, button2 }) => {
         <div className="w-full md:w-1/2 flex justify-start md:justify-end items-end pb-10 md:pb-24 md:pr-20">
           <div className="flex flex-col sm:flex-row gap-4">
             <button
-              onClick={() => navigate("/own-a-farm")}
+              onClick={() => navigate(`/${b1Link}`)}
               className="bg-green-600 hover:bg-green-700 transition px-6 py-3 rounded-md font-semibold"
             >
               {button1}
             </button>
             <button
-              onClick={() => navigate("/contact-us")}
+              onClick={() => navigate(`/${b2Link}`)}
               className="bg-white text-green-700 border border-green-600 hover:bg-green-100 transition px-6 py-3 rounded-md font-semibold"
             >
               {button2}

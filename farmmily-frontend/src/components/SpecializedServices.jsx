@@ -51,7 +51,7 @@ const SpecializedServices = () => {
       ],
     },
     {
-      image: "/images/farmServices/services/img6.png",
+      image: "/images/farmServices/services/img61.png",
       title: "Farm Branding & Identity Services",
       points: [
         "Naming, logo, packaging & label design",
@@ -80,7 +80,7 @@ const SpecializedServices = () => {
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-48 object-cover p-4"
+              className="w-full h-48 md:h-64 object-cover object-center p-4"
             />
 
             {/* Title */}
