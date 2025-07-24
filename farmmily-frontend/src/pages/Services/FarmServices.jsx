@@ -1,10 +1,22 @@
-import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import WhatWeDo from "../../components/WhatWeDo";
 import Footer from "../../components/FooterHome";
 import OurWorksGrid from "../../components/OurWorksGrid";
 import SpecializedServices from "../../components/SpecializedServices";
 
 const FarmServices = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <div
