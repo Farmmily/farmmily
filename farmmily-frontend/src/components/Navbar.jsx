@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Home", path: "/" },
-    { label: "Our Services", path: "/farm-services" },
+    { label: "Explore Our Services", path: "/farm-services" },
     { label: "Own your farm", path: "/own-a-farm" },
     { label: "Agro Tourism", path: "/agro-tourism" },
     { label: "About Us", path: "/about-us" },
@@ -34,7 +34,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md px-6 py-3 flex items-center justify-between relative z-25">
+    <nav className="bg-white shadow-md px-6 py-3 flex items-center justify-between fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <div
         className="flex items-center text-xl font-bold text-green-700 cursor-pointer"

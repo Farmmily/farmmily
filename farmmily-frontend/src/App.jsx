@@ -18,8 +18,13 @@ import FarmServices from "./pages/Services/FarmServices";
 import AgroTourism from "./pages/AgroTourism/AgroTourism";
 import NotFound from "./components/NotFound";
 import ComingSoon from "./components/ComingSoon";
+import { FaWhatsapp } from "react-icons/fa";
 
 function App() {
+  const wpLink = `${import.meta.env.VITE_WHATSAPP_URI}${
+    import.meta.env.VITE_WHATSAPP_NUMBER
+  }`;
+  const whatSappNumber = `${import.meta.env.VITE_WHATSAPP_NUMBER}`;
   return (
     <Router>
       <Navbar />
@@ -66,6 +71,20 @@ function App() {
           }
         />
       </Routes>
+
+      {/* WhatsApp Icon Component */}
+      <div className="fixed bottom-4 right-4 z-50 flex items-center space-x-2 bg-white bg-opacity-80 px-4 py-2 rounded-full shadow-md hover:bg-opacity-100 transition-opacity duration-300 sm:px-6 sm:py-3 lg:px-4 lg:py-2">
+        <a
+          href={wpLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center text-green-700 font-medium"
+        >
+          <FaWhatsapp className="w-6 h-6 sm:w-8 sm:h-8 mr-2" />
+          <span className="hidden sm:block">{whatSappNumber}</span>{" "}
+          {/* your WhatsApp number */}
+        </a>
+      </div>
     </Router>
   );
 }
