@@ -1,65 +1,102 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../newComponents/Footer";
+
+const statsData = [
+  { label: "Successful Projects", value: 100, suffix: "+", count: 0 },
+  { label: "Acres Transformed", value: 750, suffix: "+", count: 1, start: 730 },
+  {
+    label: "Trees Planted",
+    value: 100000,
+    suffix: "+",
+    count: 1,
+    start: 99910,
+  },
+  { label: "Average Revenue Boost", value: 5, suffix: "X", count: 0 },
+];
+
+// Counter component
+const Counter = ({ target, suffix, start1 }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = start1;
+    const end = target;
+    if (start === end) return;
+
+    let duration = 2000;
+    let stepTime = Math.abs(Math.floor(duration / end));
+    let timer = setInterval(() => {
+      start += 2;
+      setCount(start);
+      if (start === end) clearInterval(timer);
+    }, stepTime);
+
+    return () => clearInterval(timer);
+  }, [target]);
+
+  return (
+    <p className="text-5xl font-extrabold text-green-600">
+      {count.toLocaleString()}
+      {suffix}
+    </p>
+  );
+};
 
 const Home = () => {
   return (
     <>
-      <main>
+      <main className="font-sans">
         {/* Hero Section */}
-        <section className="hero-bg text-white">
-          <div className="container mx-auto px-6 py-32 md:py-48 text-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+        <section className="hero-bg relative text-white bg-[url('/images/bg-image.jpg')] bg-cover bg-center">
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative container mx-auto px-6 py-32 md:py-48 text-center">
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in">
               Engineering Your Agricultural Legacy
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto animate-slide-up">
               We are architects of agricultural transformation, converting
               underutilized land into profitable, sustainable assets.
             </p>
             <Link
               to="/about"
-              className="bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-700 transition-transform duration-300 cta-button"
+              className="bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-md hover:bg-green-700 hover:scale-105 transition-transform duration-300"
             >
               Unlock Your Land&apos;s Potential
             </Link>
           </div>
         </section>
-
         {/* Impact Stats */}
-        <section className="py-20">
+        <section className="py-24 bg-gray-50">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 A Legacy of Positive Impact
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-6xl mx-auto">
-              <div>
-                <p className="text-5xl font-extrabold text-green-600">100+</p>
-                <p className="text-xl font-semibold text-gray-700 mt-2">
-                  Successful Projects
-                </p>
-              </div>
-              <div>
-                <p className="text-5xl font-extrabold text-green-600">750+</p>
-                <p className="text-xl font-semibold text-gray-700 mt-2">
-                  Acres Transformed
-                </p>
-              </div>
-              <div>
-                <p className="text-5xl font-extrabold text-green-600">
-                  100,000+
-                </p>
-                <p className="text-xl font-semibold text-gray-700 mt-2">
-                  Trees Planted
-                </p>
-              </div>
-              <div>
-                <p className="text-5xl font-extrabold text-green-600">5X</p>
-                <p className="text-xl font-semibold text-gray-700 mt-2">
-                  Average Revenue Boost
-                </p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center max-w-6xl mx-auto">
+              {statsData.map((stat, idx) => (
+                <div
+                  key={idx}
+                  className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition duration-300"
+                >
+                  {stat.count ? (
+                    <Counter
+                      target={stat.value}
+                      suffix={stat.suffix}
+                      start1={stat?.start}
+                    />
+                  ) : (
+                    <p className="text-5xl font-extrabold text-green-600">
+                      {stat.value.toLocaleString()}
+                      {stat.suffix}
+                    </p>
+                  )}
+                  <p className="text-xl font-semibold text-gray-700 mt-2">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -89,19 +126,17 @@ const Home = () => {
               </div>
               <div>
                 <img
-                  src="https://placehold.co/600x450/a3e635/333333?text=Our+Process"
+                  src="/images/home_new/mandate.png"
                   alt="Our Process"
-                  className="rounded-lg shadow-xl w-full h-auto"
+                  className="rounded-lg shadow-xl w-full md:h-128 object-fit"
                 />
               </div>
             </div>
           </div>
         </section>
-
-        {/* Development Spectrum */}
-        <section className="py-20">
+        <section className="py-24 bg-gray-50">
           <div className="container mx-auto px-6">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Our End-to-End Development Spectrum
               </h2>
@@ -111,7 +146,7 @@ const Home = () => {
                 excellence at every stage.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
               {[
                 "Strategic Site Analysis",
                 "Financial Modeling",
@@ -124,26 +159,27 @@ const Home = () => {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-600"
+                  className="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-600 hover:shadow-xl hover:translate-y-[-5px] transition duration-300"
                 >
                   <p className="text-2xl font-bold text-green-600 mb-2">
                     {String(idx + 1).padStart(2, "0")}
                   </p>
-                  <h3 className="text-xl font-semibold mb-2">{item}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                    {item}
+                  </h3>
                 </div>
               ))}
             </div>
-            <div className="text-center mt-12">
+            <div className="text-center mt-16">
               <Link
                 to="/services"
-                className="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700"
+                className="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 hover:scale-105 transition duration-300"
               >
                 Explore Our Services in Detail
               </Link>
             </div>
           </div>
         </section>
-
         {/* Project Spotlight */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-6">
@@ -171,7 +207,7 @@ const Home = () => {
                     <span className="text-green-500 font-bold mr-2">➔</span>
                     <div>
                       <span className="font-semibold">Solution:</span> A turnkey
-                      development plan featuring{" "}
+                      development plan featuring
                       <strong>
                         64,000 Tissue Culture Teak and Mahogany trees
                       </strong>
@@ -183,7 +219,7 @@ const Home = () => {
                     <span className="text-green-500 font-bold mr-2">➔</span>
                     <div>
                       <span className="font-semibold">Outcome:</span> A
-                      projected high-ROI timber asset with significant{" "}
+                      projected high-ROI timber asset with significant
                       <strong>carbon sequestration benefits</strong>, creating a
                       sustainable legacy for generations.
                     </div>
@@ -200,7 +236,7 @@ const Home = () => {
               </div>
               <div>
                 <img
-                  src="https://placehold.co/600x450/ca8a04/ffffff?text=Mahogany+Plantation"
+                  src="/images/home_new/timberwood.png"
                   alt="Mahogany Plantation"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -208,7 +244,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         {/* Sustainability */}
         <section className="py-20">
           <div className="container mx-auto px-6">
@@ -229,7 +264,7 @@ const Home = () => {
               </div>
               <div className="md:order-1">
                 <img
-                  src="https://placehold.co/600x450/16a34a/ffffff?text=Sustainability"
+                  src="images/home_new/sustain.png"
                   alt="Sustainability"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -237,7 +272,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         {/* Ventures */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-6">
@@ -257,7 +291,7 @@ const Home = () => {
               </div>
               <div>
                 <img
-                  src="https://placehold.co/600x450/f59e0b/333333?text=Authentic+Foods"
+                  src="images/home_new/foods.png"
                   alt="Farmmily Foods"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -265,8 +299,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        {/* Partner With Us */}
         <section className="py-20">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -287,7 +319,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         {/* CTA */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-6 text-center bg-green-600 text-white p-12 rounded-lg shadow-xl">

@@ -7,8 +7,8 @@ const PartnerWithUs = () => {
       (
       <main>
         {/* Hero Section */}
-        <section className="page-header-bg text-white">
-          <div className="container mx-auto px-6 py-24 text-center">
+        <section className="page-header-bg text-white bg-[url(/images/products/coconut.jpg)] bg-cover bg-center">
+          <div className="container mx-auto px-6 py-24 text-center bg-black/60">
             <h1 className="text-4xl md:text-5xl font-extrabold">
               Let's Cultivate the Future, Together.
             </h1>

@@ -6,8 +6,8 @@ const Services = () => {
     <>
       <main>
         {/* Page Header */}
-        <section className="page-header-bg text-white">
-          <div className="container mx-auto px-6 py-24 text-center">
+        <section className="page-header-bg text-white bg-[url(/images/bulk-leasing/bl1.jpg)] bg-cover bg-center ">
+          <div className="container mx-auto px-6 py-24 text-center bg-black/50">
             <h1 className="text-4xl md:text-5xl font-extrabold">
               Our Process: A Journey to Profitability
             </h1>
@@ -51,7 +51,7 @@ const Services = () => {
               </div>
               <div>
                 <img
-                  src="https://placehold.co/600x450/a3e635/333333?text=Strategic+Planning"
+                  src="images/new_services/consult.png"
                   alt="Strategic Planning"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -88,7 +88,7 @@ const Services = () => {
               </div>
               <div className="md:order-1">
                 <img
-                  src="https://placehold.co/600x450/16a34a/ffffff?text=Infrastructure"
+                  src="images/new_services/cultivation.png"
                   alt="Infrastructure Development"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -125,9 +125,9 @@ const Services = () => {
               </div>
               <div>
                 <img
-                  src="https://placehold.co/600x450/65a30d/ffffff?text=Asset+Management"
+                  src="images/new_services/found.png"
                   alt="Asset Management"
-                  className="rounded-lg shadow-xl w-full h-auto"
+                  className="rounded-lg shadow-xl w-full h-128"
                 />
               </div>
             </div>

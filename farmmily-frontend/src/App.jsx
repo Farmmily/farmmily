@@ -23,6 +23,9 @@ import Header from "./newComponents/Header";
 import Footer from "./components/FooterHome";
 import Services from "./newPages/Services";
 import PartnerWithUs from "./newPages/PartnerWithUs";
+import Portfolio from "./newPages/Portfolio";
+import ManagedFarming from "./newPages/ManagedFarming";
+import Team from "./newPages/Team";
 
 function App() {
   const wpLink = `${import.meta.env.VITE_WHATSAPP_URI}${
@@ -46,9 +49,12 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/partner" element={<PartnerWithUs />} />
         <Route path="/about" element={<About />} />
-        <Route path="/farm-services" element={<FarmServices />} />
+        <Route path="/managed-farming" element={<ManagedFarming />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/agro-tourism" element={<AgroTourism />} />
+        <Route path="/team" element={<Team />} />
+        {/* <Route path="/farm-services" element={<FarmServices />} /> */}
+        {/* <Route path="/agro-tourism" element={<AgroTourism />} /> */}
 
         {/* Protected Routes */}
         <Route

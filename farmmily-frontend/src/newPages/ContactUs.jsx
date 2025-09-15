@@ -6,8 +6,8 @@ const Contact = () => {
     <>
       <main>
         {/* Header Section */}
-        <section className="page-header-bg text-white">
-          <div className="container mx-auto px-6 py-24 text-center">
+        <section className="page-header-bg text-white bg-[url(/images/bg-image.jpg)] bg-cover bg-center">
+          <div className="container mx-auto px-6 py-24 text-center bg-black/50">
             <h1 className="text-4xl md:text-5xl font-extrabold">Contact Us</h1>
           </div>
         </section>
