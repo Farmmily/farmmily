@@ -191,7 +191,7 @@ const Services = () => {
                   desc: "We guide you in transforming your raw produce into high-margin, market-ready products, from cold-pressed oils to packaged goods, complete with branding support.",
                 },
                 {
-                  title: "Corporate Sustainability (CSR)",
+                  title: "Corporate Social Responsibility (CSR)",
                   desc: "We partner with corporations to design and execute impactful CSR initiatives, such as large-scale tree plantation drives and community farming projects, creating shared value.",
                 },
                 {

@@ -42,7 +42,7 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Corporate Office</h3>
               <p className="text-gray-400">
-                57, CK Colony, New Siddhapudur, Coimbatore-641044
+                57, CK Colony, New Siddhapudur, Coimbatore, Tamil Nadu - 641044
               </p>
             </div>
             <div>
