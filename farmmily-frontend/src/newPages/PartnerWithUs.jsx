@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Footer from "../newComponents/Footer";
+import emailjs from "emailjs-com";
 
 const PartnerWithUs = () => {
+  const form = useRef();
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ke9qfyn",
+        "template_d3ohjyq",
+        form.current,
+        "PqCbHF3gU1vp2_mpt"
+      )
+      .then(
+        () => {
+          setSent(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.error(
+            "FAILED... contact the number in the contact page",
+            error.text
+          );
+        }
+      );
+  };
   return (
     <>
-      (
       <main>
         {/* Hero Section */}
         <section className="page-header-bg text-white bg-[url(/images/products/coconut.jpg)] bg-cover bg-center">
@@ -68,41 +94,52 @@ const PartnerWithUs = () => {
               </p>
             </div>
             <div className="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-lg shadow-lg border border-gray-200">
-              <form>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                   <input
                     type="text"
+                    name="name"
                     placeholder="Your Full Name"
+                    required
                     className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   />
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your Email Address"
+                    required
                     className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   />
                 </div>
                 <div className="mb-6">
                   <input
                     type="text"
-                    placeholder="Contact Number"
+                    name="subject"
+                    placeholder="Subject of Inquiry"
+                    required
                     className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   />
                 </div>
                 <div className="mb-6">
                   <textarea
-                    placeholder="Briefly describe your proposal or product line..."
+                    name="message"
+                    placeholder="Briefly describe your project or requirement..."
                     rows="5"
+                    required
                     className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   ></textarea>
                 </div>
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-green-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-green-700"
-                  >
-                    Submit Inquiry
-                  </button>
-                </div>
+                <button
+                  type="submit"
+                  className="bg-green-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-green-700"
+                >
+                  Submit Inquiry
+                </button>
+                {sent && (
+                  <p className="text-green-600 mt-4 font-semibold">
+                    ✅ Your message has been sent successfully!
+                  </p>
+                )}
               </form>
             </div>
           </div>

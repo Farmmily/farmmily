@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Footer from "../newComponents/Footer";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ke9qfyn",
+        "template_d3ohjyq",
+        form.current,
+        "PqCbHF3gU1vp2_mpt"
+      )
+      .then(
+        () => {
+          setSent(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <>
       <main>
@@ -28,30 +53,38 @@ const Contact = () => {
               {/* Form */}
               <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
                 <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                     <input
                       type="text"
+                      name="name"
                       placeholder="Your Full Name"
+                      required
                       className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                     <input
                       type="email"
+                      name="email"
                       placeholder="Your Email Address"
+                      required
                       className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                   </div>
                   <div className="mb-6">
                     <input
                       type="text"
+                      name="subject"
                       placeholder="Subject of Inquiry"
+                      required
                       className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                   </div>
                   <div className="mb-6">
                     <textarea
+                      name="message"
                       placeholder="Briefly describe your project or requirement..."
                       rows="5"
+                      required
                       className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                     ></textarea>
                   </div>
@@ -61,6 +94,11 @@ const Contact = () => {
                   >
                     Submit Inquiry
                   </button>
+                  {sent && (
+                    <p className="text-green-600 mt-4 font-semibold">
+                      ✅ Your message has been sent successfully!
+                    </p>
+                  )}
                 </form>
               </div>
 

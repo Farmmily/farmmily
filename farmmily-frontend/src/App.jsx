@@ -26,7 +26,7 @@ import PartnerWithUs from "./newPages/PartnerWithUs";
 import Portfolio from "./newPages/Portfolio";
 import ManagedFarming from "./newPages/ManagedFarming";
 import Team from "./newPages/Team";
-
+import Insights from "./newPages/Insights";
 function App() {
   const wpLink = `${import.meta.env.VITE_WHATSAPP_URI}${
     import.meta.env.VITE_WHATSAPP_NUMBER
@@ -53,6 +53,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/insights" element={<Insights />} />
         {/* <Route path="/farm-services" element={<FarmServices />} /> */}
         {/* <Route path="/agro-tourism" element={<AgroTourism />} /> */}
 
