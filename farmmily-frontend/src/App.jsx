@@ -35,6 +35,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <div className="mt-20"></div>
       <Routes>
         {/* Public Routes */}
         <Route path="*" element={<NotFound />} />

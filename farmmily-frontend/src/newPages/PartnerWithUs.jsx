@@ -104,9 +104,9 @@ const PartnerWithUs = () => {
                     className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   />
                   <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email Address"
+                    type="tel"
+                    name="tel"
+                    placeholder="Your Phone Number"
                     required
                     className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   />

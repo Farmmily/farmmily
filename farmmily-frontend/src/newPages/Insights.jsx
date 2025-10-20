@@ -21,7 +21,6 @@ const caseStudies = [
       "Projected ROI within a 12–15 year harvest cycle.",
       "Acts as a major carbon sink with carbon credit potential.",
     ],
-    image: "/images/insights/timber.png",
   },
   {
     title: "Medicinal Crop Plantation",
@@ -41,7 +40,6 @@ const caseStudies = [
       "Delivered strong profit margins for the client.",
       "Proved expertise in high-risk, high-reward farming.",
     ],
-    image: "/images/insights/medicine.png",
   },
   {
     title: "Sustainable Fruit Farming",
@@ -58,7 +56,6 @@ const caseStudies = [
       "Yield increased by 40% within two harvests.",
       "Improved fruit quality to meet export standards.",
     ],
-    image: "/images/insights/sustain.png",
   },
   {
     title: "Carbon Credit Farming",
@@ -75,7 +72,6 @@ const caseStudies = [
       "Transformed 100 acres into a thriving green zone.",
       "Generated passive income through carbon credits.",
     ],
-    image: "/images/insights/carbon.png",
   },
   {
     title: "Integrated Farming Systems",
@@ -92,7 +88,6 @@ const caseStudies = [
       "Created three income streams: livestock, fruit, and energy.",
       "Reduced costs via zero-waste farming.",
     ],
-    image: "/images/insights/int.png",
   },
   {
     title: "Agri-Tourism & Resort Development",
@@ -110,7 +105,6 @@ const caseStudies = [
       "Generated a new high-occupancy revenue stream.",
       "Blended sustainability with luxury tourism.",
     ],
-    image: "/images/insights/agrotourism.png",
   },
 ];
 
@@ -144,61 +138,52 @@ const Insights = () => {
 
         {/* Case Studies */}
         <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-6 space-y-24">
+          <div className="container mx-auto px-6 space-y-20">
             {caseStudies.map((study, i) => (
               <motion.div
                 key={i}
-                className={`flex flex-col md:flex-row ${
-                  i % 2 === 1 ? "md:flex-row-reverse" : ""
-                } items-center gap-10`}
+                className="bg-white shadow-md rounded-xl p-8"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                {/* Image */}
-                <motion.div
-                  className="w-full md:w-1/2 overflow-hidden rounded-2xl shadow-xl"
-                  whileHover={{ scale: 1.03 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <img
-                    src={study.image}
-                    alt={study.title}
-                    className="w-full h-[400px] object-cover rounded-2xl"
-                  />
-                </motion.div>
+                <h3 className="text-green-700 font-semibold uppercase tracking-wide">
+                  {study.title}
+                </h3>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 mb-4 leading-snug">
+                  {study.subtitle}
+                </h2>
 
-                {/* Content */}
-                <div className="w-full md:w-1/2">
-                  <h3 className="text-green-700 font-semibold uppercase tracking-wide">
-                    {study.title}
-                  </h3>
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2 mb-4 leading-snug">
-                    {study.subtitle}
-                  </h2>
-                  <p className="text-gray-600 mb-3">
+                <div className="text-gray-600 space-y-4">
+                  <p>
                     <strong>Client Objective:</strong> {study.clientObjective}
                   </p>
-                  <p className="text-gray-600 mb-3">
+                  <p>
                     <strong>The Challenge:</strong> {study.challenge}
                   </p>
-                  <p className="text-gray-700 font-semibold mb-2">
-                    Farmmily’s Solution:
-                  </p>
-                  <ul className="list-disc list-inside text-gray-600 mb-4 space-y-1">
-                    {study.solution.map((s, idx) => (
-                      <li key={idx}>{s}</li>
-                    ))}
-                  </ul>
-                  <p className="text-gray-700 font-semibold mb-2">
-                    Key Outcomes:
-                  </p>
-                  <ul className="list-disc list-inside text-gray-600 space-y-1">
-                    {study.outcomes.map((o, idx) => (
-                      <li key={idx}>{o}</li>
-                    ))}
-                  </ul>
+
+                  <div>
+                    <p className="text-gray-700 font-semibold mb-2">
+                      Farmmily’s Solution:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1">
+                      {study.solution.map((s, idx) => (
+                        <li key={idx}>{s}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-gray-700 font-semibold mt-4 mb-2">
+                      Key Outcomes:
+                    </p>
+                    <ul className="list-disc list-inside space-y-1">
+                      {study.outcomes.map((o, idx) => (
+                        <li key={idx}>{o}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </motion.div>
             ))}

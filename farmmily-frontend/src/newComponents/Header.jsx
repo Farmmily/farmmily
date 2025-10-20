@@ -33,7 +33,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm fixed top-0 w-full z-50">
       <nav
         ref={menuRef}
         className="container mx-auto px-6 py-4 flex justify-between items-center"
