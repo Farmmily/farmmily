@@ -95,21 +95,22 @@ const Team = () => {
           </header>
 
           {/* Directors */}
-          <section className="mb-16">
+          {/* Directors */}
+          <section className="mb-16 w-full">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 border-l-4 border-blue-600 pl-4 mb-8">
               Our Directors
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
               {teamMembers.slice(0, 2).map((member, index) => (
                 <div
                   key={member.id}
-                  className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer p-6 flex flex-col items-center justify-center text-center aspect-square"
+                  className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer p-10 flex flex-col items-center justify-center text-center w-full"
                   onClick={() => openModal(index)}
                 >
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-128 h-128 md:w-40 md:h-40 rounded-lg object-cover shadow-md mb-4"
+                    className="w-48 h-48 md:w-64 md:h-64 rounded-full object-contain shadow-lg mb-6 bg-gray-100"
                   />
                   <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                     {member.name}
@@ -123,26 +124,26 @@ const Team = () => {
           </section>
 
           {/* Advisors */}
-          <section>
+          <section className="w-full">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 border-l-4 border-blue-600 pl-4 mb-8">
               Our Senior Leadership
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
               {teamMembers.slice(2).map((member, index) => (
                 <div
                   key={member.id}
-                  className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer p-6 flex flex-col items-center justify-center text-center aspect-square"
+                  className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer p-10 flex flex-col items-center justify-center text-center w-full"
                   onClick={() => openModal(index + 2)}
                 >
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-128 h-128 md:w-40 md:h-40 rounded-lg object-cover shadow-md mb-4"
+                    className="w-44 h-44 md:w-56 md:h-56 rounded-full object-contain shadow-lg mb-6 bg-gray-100"
                   />
                   <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 font-medium text-base md:text-lg px-2">
+                  <p className="text-blue-600 font-medium text-base md:text-lg">
                     {member.role}
                   </p>
                 </div>
@@ -157,39 +158,49 @@ const Team = () => {
             className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4"
             onClick={(e) => e.target === e.currentTarget && closeModal()}
           >
-            <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 w-full max-w-3xl relative">
+            <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-10 w-full max-w-4xl relative overflow-hidden">
+              {/* Close Button */}
               <button
                 onClick={closeModal}
-                className="absolute top-2 right-3 text-4xl text-gray-400 hover:text-red-500"
+                className="absolute top-3 right-4 text-4xl text-gray-400 hover:text-red-500 transition-colors"
               >
                 &times;
               </button>
 
+              {/* Navigation Arrows */}
               <button
                 onClick={showPrev}
-                className="absolute left-[-4rem] md:left-[-3rem] top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-opacity-70"
+                className="absolute left-3 md:left-[-3.5rem] top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-opacity-70 transition"
               >
                 &#10094;
               </button>
 
               <button
                 onClick={showNext}
-                className="absolute right-[-4rem] md:right-[-3rem] top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-opacity-70"
+                className="absolute right-3 md:right-[-3.5rem] top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-opacity-70 transition"
               >
                 &#10095;
               </button>
 
-              <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-                <img
-                  src={currentMember.image}
-                  alt={currentMember.name}
-                  className="w-40 h-40 md:w-48 md:h-48 rounded-lg object-cover shadow-lg flex-shrink-0"
-                />
+              {/* Content */}
+              <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-10 space-y-8 md:space-y-0">
+                {/* Profile Image */}
+                <div className="relative flex-shrink-0">
+                  <img
+                    src={currentMember.image}
+                    alt={currentMember.name}
+                    className="w-44 h-44 md:w-56 md:h-56 rounded-full object-contain shadow-lg bg-gray-100 border-4 border-blue-100"
+                  />
+                  <div className="absolute inset-0 rounded-full ring-2 ring-blue-600/10 pointer-events-none"></div>
+                </div>
+
+                {/* Text Content */}
                 <div className="text-center md:text-left w-full">
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                     {currentMember.name}
                   </h3>
-                  {currentMember.din && (
+
+                  {currentMember.din ? (
                     <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 justify-center md:justify-start mb-4">
                       <p className="text-lg md:text-xl font-semibold text-blue-600">
                         {currentMember.role}
@@ -199,22 +210,27 @@ const Team = () => {
                         DIN: {currentMember.din}
                       </p>
                     </div>
-                  )}
-                  {!currentMember.din && (
+                  ) : (
                     <p className="text-lg md:text-xl font-semibold text-blue-600 mb-4">
                       {currentMember.role}
                     </p>
                   )}
-                  <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
-                    {currentMember.bio1}
-                  </p>
-                  <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6">
-                    {currentMember.bio2}
-                  </p>
+
+                  <div className="space-y-4 mb-6">
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                      {currentMember.bio1}
+                    </p>
+                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                      {currentMember.bio2}
+                    </p>
+                  </div>
+
                   {currentMember.linkedin && (
                     <a
                       href={currentMember.linkedin}
-                      className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
                     >
                       <Linkedin className="w-4 h-4" />
                       Connect on LinkedIn
