@@ -65,7 +65,7 @@ const Header = () => {
                 "/about"
               )}`}
             >
-              About Us
+              Explore
               <svg
                 className={`ml-1 w-4 h-4 transform transition-transform ${
                   aboutOpen ? "rotate-180" : "rotate-0"
@@ -93,7 +93,7 @@ const Header = () => {
                     setIsOpen(false);
                   }}
                 >
-                  Our Work
+                  About
                 </Link>
                 <Link
                   to="/team"
@@ -103,7 +103,7 @@ const Header = () => {
                     setIsOpen(false);
                   }}
                 >
-                  Our Team
+                  People
                 </Link>
               </div>
             )}
