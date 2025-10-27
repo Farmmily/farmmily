@@ -10,7 +10,7 @@ const teamMembers = [
     din: "11253864",
     image: "/images/ppl/vijay.jpg",
     bio1: "Vijayakumar Arumugam directs Farmmmily's technical and field operations, translating strategic plans into successful on-ground execution. He brings nearly four decades of distinguished experience from the Agricultural Engineering Department, Government of Tamil Nadu, where he retired as a Superintendent Engineer. His extensive field knowledge is backed by an M.Tech in Farm Power Engineering and an MBA in Agri-Business, both from TNAU, Coimbatore.",
-    bio2: "As the company’s chief field expert, his technical expertise is foundational to Farmmily's success. His background in mechanical engineering is pivotal to his work in large-scale farm mechanization, soil and water conservation, waste management solutions, and the development of innovative agricultural machinery.",
+    bio2: "As the company’s chief field expert, his technical expertise is foundational to Farmmily's success. His background in mechanical engineering is pivotal to his work in large-scale farm mechanization, soil and water conservation, waste management solutions, and the development of innovative agricultural machinery. His proven ability to manage complex on-ground projects is the bedrock of the company's delivery excellence.",
     linkedin:
       "https://www.linkedin.com/in/vijayakumar-arumugam-b2028838b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjpPgWCk9S0CXBA6unlAY4Q%3D%3D",
   },
@@ -30,7 +30,7 @@ const teamMembers = [
     name: "Jayaram Balasubramanian",
     role: "Principal Advisor - Horticulture & Agronomy",
     image: "/images/ppl/jay.jpg",
-    bio1: "Jayaram Balasubramanian guides Farmmily's technical strategy for high-value crop cultivation, bringing over 40 years of international experience as a distinguished horticulturist. A Gold Medalist with an M.Sc. in Horticulture from TNAU, his expertise spans Floriculture, Pomology, and Spices, and he is a recognized specialist in medicinal and aromatic plant cultivation (including Stevia, Artemisia, Rosemary, Yacon, Gac and Monk Fruit).",
+    bio1: "Jayaram Balasubramanian guides Farmmily's technical strategy for high-value crop cultivation, bringing over 40 years of international experience as a distinguished horticulturist. A Gold Medalist with an M.Sc. in Horticulture from TNAU, his expertise spans Floriculture, Pomology, and Spices, and he is a recognized specialist in medicinal and aromatic plant cultivation (including Stevia, Artemisia, Rosemary, Yacon, Gac and Monk Fruit). He served for 25 years in the Tamil Nadu Horticulture Department, holding key roles in the development of various state botanic gardens.",
     bio2: "As an international consultant for premier agencies like USAID and UNIDO, his expertise has been pivotal in large-scale horticultural projects across Africa, Asia, and the Middle East. He has also served as a key technical advisor to many of India's leading pharma and nutraceutical companies.",
     linkedin:
       "https://www.linkedin.com/in/bala1952?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDSJsGNWVRiGNYgatGEWzig%3D%3D",
@@ -41,7 +41,8 @@ const teamMembers = [
     role: "Principal Advisor - Crop Protection",
     image: "/images/ppl/krishna.jpg",
     bio1: "Dr. Krishnamohan Govindaswamy guides Farmmily's crop protection and plant health strategy. He is a seasoned professional with over four decades of deep experience in R&D, quality assurance, and field operations. A former scientist and Gold Medalist in Plant Pathology at Tamil Nadu Agricultural University (TNAU), he spent three decades in leadership roles at top-tier MNCs in the crop protection industry.",
-    bio2: "His expertise covers Indian regulatory affairs and a specialized, high-level focus on biopesticides, having advised numerous national and international companies on establishing and marketing their bio-product portfolios in India.",
+    bio2: "His three decades of experience in the Crop Protection industry (MNCs) focused on the evaluation and market development activities for the promotion and marketing of Crop Protection products, including insecticides, fungicides, herbicides, nematicides, and biostimulants.",
+    bio3: "His expertise also covers Indian regulatory affairs (facilitating new product registrations) and a specialized, high-level focus on biopesticides, having advised numerous national and international companies on establishing and marketing their bio-product portfolios in India.",
   },
 ];
 
@@ -95,7 +96,6 @@ const Team = () => {
           </header>
 
           {/* Directors */}
-          {/* Directors */}
           <section className="mb-16 w-full">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 border-l-4 border-blue-600 pl-4 mb-8">
               Our Directors
@@ -110,7 +110,7 @@ const Team = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-48 h-48 md:w-64 md:h-64 rounded-full object-contain shadow-lg mb-6 bg-gray-100"
+                    className="w-48 h-48 md:w-64 md:h-64 rounded-full object-contain shadow-sm mb-6"
                   />
                   <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
                     {member.name}
@@ -223,6 +223,11 @@ const Team = () => {
                     <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                       {currentMember.bio2}
                     </p>
+                    {currentMember.bio3 && (
+                      <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                        {currentMember.bio3}
+                      </p>
+                    )}
                   </div>
 
                   {currentMember.linkedin && (
