@@ -13,29 +13,29 @@ const Footer = () => {
                 className="h-14 w-auto"
               />
               <p className="text-gray-400 mt-2">
-                Bringing farms closer to you 
+                Bringing farms closer to you
               </p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Navigate</h3>
               <ul>
                 <li className="mb-2">
-                  <a href="index.html" className="hover:text-green-400">
+                  <a href="/" className="hover:text-green-400">
                     Home
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="about.html" className="hover:text-green-400">
+                  <a href="/about" className="hover:text-green-400">
                     About Us
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="services.html" className="hover:text-green-400">
+                  <a href="/services" className="hover:text-green-400">
                     Services
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="portfolio.html" className="hover:text-green-400">
+                  <a href="/portfolio" className="hover:text-green-400">
                     Portfolio
                   </a>
                 </li>

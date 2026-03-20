@@ -6,7 +6,7 @@ const Services = () => {
     <>
       <main>
         {/* Page Header */}
-        <section className="page-header-bg text-white bg-[url(/images/bulk-leasing/bl1.jpg)] bg-cover bg-center ">
+        <section className="page-header-bg text-white bg-[url(/images/new_services/cover.jpg)] bg-cover bg-bottom ">
           <div className="container mx-auto px-6 py-24 text-center bg-black/50">
             <h1 className="text-4xl md:text-5xl font-extrabold">
               Our Process: A Journey to Profitability
@@ -51,7 +51,7 @@ const Services = () => {
               </div>
               <div>
                 <img
-                  src="images/new_services/consult.png"
+                  src="images/new_services/consulting.jpg"
                   alt="Strategic Planning"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -88,7 +88,7 @@ const Services = () => {
               </div>
               <div className="md:order-1">
                 <img
-                  src="images/new_services/cultivation.png"
+                  src="images/new_services/infra.jpg"
                   alt="Infrastructure Development"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -125,7 +125,7 @@ const Services = () => {
               </div>
               <div>
                 <img
-                  src="images/new_services/found.png"
+                  src="images/new_services/farm.jpg"
                   alt="Asset Management"
                   className="rounded-lg shadow-xl w-full h-128"
                 />

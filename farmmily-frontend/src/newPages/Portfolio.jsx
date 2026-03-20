@@ -9,7 +9,7 @@ const Portfolio = () => {
       description:
         "We specialize in the end-to-end development of large-scale timber plantations, focusing on high-ROI species like Tissue Culture Teak and Mahogany. Our scientific approach to soil management and high-density planting transforms land into a valuable, appreciating asset for future generations.",
       mainImage:
-        "https://placehold.co/600x400/78350f/ffffff?text=Timber+Plantation",
+        "/images/portfolio/timber.jpg",
       gallery: [
         "https://placehold.co/400x300/854d0e/ffffff?text=Then:+Saplings+(2015)",
         "https://placehold.co/400x300/ca8a04/ffffff?text=Now:+Mature+Forest+(2025)",
@@ -22,7 +22,7 @@ const Portfolio = () => {
       description:
         "Our expertise extends to the profitable cultivation of high-demand medicinal crops. We manage the entire process, from creating optimal soil conditions to establishing market linkages for niche products like Gloriosa Superba, ensuring a lucrative venture into the pharmaceutical supply chain.",
       mainImage:
-        "https://placehold.co/600x400/be185d/ffffff?text=Medicinal+Crops",
+        "/images/portfolio/med.jpg",
       gallery: [
         "https://placehold.co/400x300/db2777/ffffff?text=Gloriosa+Superba+Flower",
         "https://placehold.co/400x300/e11d48/ffffff?text=Cultivation+Field",
@@ -35,7 +35,7 @@ const Portfolio = () => {
       description:
         "We are committed to nurturing the next generation of agricultural professionals. We conduct specialized training programs for students and farmers on critical topics like organic farming, modern tree climbing techniques, and sustainable water management, empowering communities with practical, field-ready skills.",
       mainImage:
-        "https://placehold.co/600x400/059669/ffffff?text=Training+Session",
+        "/images/portfolio/training.jpg",
       gallery: [
         "https://placehold.co/400x300/047857/ffffff?text=Classroom+Training",
         "https://placehold.co/400x300/065f46/ffffff?text=Field+Demonstration",
@@ -48,7 +48,7 @@ const Portfolio = () => {
       description:
         "We revitalize and establish modern fruit orchards with a focus on sustainability and yield maximization. By implementing precision irrigation and organic farming practices, we have successfully boosted yields by over 40% in projects like our Mango orchard revivals, ensuring higher quality produce.",
       mainImage:
-        "https://placehold.co/600x400/f59e0b/ffffff?text=Fruit+Orchards",
+        "/images/portfolio/fruit.jpg",
       gallery: [
         "https://placehold.co/400x300/fbbf24/ffffff?text=Before:+Old+Orchard",
         "https://placehold.co/400x300/facc15/ffffff?text=After:+Revitalized+Farm",
@@ -61,7 +61,7 @@ const Portfolio = () => {
       description:
         "We deploy a fleet of advanced and heavy earth-moving machinery to execute large-scale projects with precision and efficiency. From laser-guided land leveling to automated planting systems, our investment in technology ensures projects are completed on time and to the highest engineering standards.",
       mainImage:
-        "https://placehold.co/600x400/1e40af/ffffff?text=Farm+Mechanisation",
+        "/images/portfolio/farm_mech.jpg",
       gallery: [
         "https://placehold.co/400x300/1d4ed8/ffffff?text=Excavator+Work",
         "https://placehold.co/400x300/2563eb/ffffff?text=Drone+Seeding",
@@ -74,7 +74,7 @@ const Portfolio = () => {
       description:
         "Our commitment to innovation drives us to integrate cutting-edge technology into every project. We utilize digital surveying for precise analysis, deploy IoT sensors for real-time monitoring, and use data analytics to create predictive models for crop yields.",
       mainImage:
-        "https://placehold.co/600x400/0891b2/ffffff?text=Agri-Tech+Innovation",
+        "/images/portfolio/tech.JPG",
       gallery: [
         "https://placehold.co/400x300/0e7490/ffffff?text=Data+Analytics+Dashboard",
         "https://placehold.co/400x300/06b6d4/ffffff?text=IoT+Soil+Sensor",
@@ -86,7 +86,7 @@ const Portfolio = () => {
       category: "AESTHETIC & ECOLOGICAL DESIGN",
       description:
         "We believe farms should be both productive and beautiful. Our landscaping services create aesthetically superior environments, integrating bespoke elements like artistic sculptures and serene walkways to elevate the value and appeal of the property.",
-      mainImage: "https://placehold.co/600x400/16a34a/ffffff?text=Landscaping",
+      mainImage: "/images/portfolio/land.jpg",
       gallery: [
         "https://placehold.co/400x300/22c55e/ffffff?text=Artistic+Sculptures",
         "https://placehold.co/400x300/4ade80/ffffff?text=Manicured+Gardens",
@@ -99,7 +99,7 @@ const Portfolio = () => {
       description:
         "Water is a critical asset. We specialize in the design and construction of natural irrigation ponds and check dams to harvest rainwater effectively. Our water conservation strategies ensure a sustainable and resilient water supply for every project.",
       mainImage:
-        "https://placehold.co/600x400/0ea5e9/ffffff?text=Water+Conservation",
+        "/images/portfolio/water.jpg",
       gallery: [
         "https://placehold.co/400x300/0284c7/ffffff?text=Natural+Irrigation+Pond",
         "https://placehold.co/400x300/38bdf8/ffffff?text=Check+Dam+Construction",
@@ -112,7 +112,7 @@ const Portfolio = () => {
       description:
         "Preserving mature trees is a cornerstone of our ecological commitment. We utilize advanced techniques and specialized machinery to safely relocate large trees, conserving biodiversity and the natural heritage of the land during development projects.",
       mainImage:
-        "https://placehold.co/600x400/65a30d/ffffff?text=Tree+Transplantation",
+        "/images/portfolio/tree_trans.jpg",
       gallery: [
         "https://placehold.co/400x300/4d7c0f/ffffff?text=Large+Tree+Moving",
         "https://placehold.co/400x300/84cc16/ffffff?text=Specialized+Machinery",
@@ -124,7 +124,7 @@ const Portfolio = () => {
       category: "CIVIL & CONSTRUCTION",
       description:
         "We provide complete construction solutions for agricultural estates. This includes building custom farmhouses that blend with the landscape and executing critical civil works like retaining walls and check dams, especially for projects in hilly terrain.",
-      mainImage: "https://placehold.co/600x400/94a3b8/ffffff?text=Farm+House",
+      mainImage: "/images/portfolio/farm.jpg",
       gallery: [
         "https://placehold.co/400x300/64748b/ffffff?text=Custom+Farm+House",
         "https://placehold.co/400x300/cbd5e1/ffffff?text=Retaining+Wall+Construction",
@@ -136,7 +136,7 @@ const Portfolio = () => {
       category: "MECHANICAL & INNOVATION",
       description:
         "Our in-house engineering capabilities allow us to create bespoke solutions for unique agricultural challenges. We design and fabricate custom machinery, structures, and tools, ensuring every project is equipped for optimal performance and efficiency.",
-      mainImage: "https://placehold.co/600x400/5b21b6/ffffff?text=Fabrication",
+      mainImage: "/images/portfolio/custom.JPG",
       gallery: [
         "https://placehold.co/400x300/4c1d95/ffffff?text=Custom+Machinery",
         "https://placehold.co/400x300/6d28d9/ffffff?text=Welding+&+Fabrication",
@@ -149,7 +149,7 @@ const Portfolio = () => {
       description:
         "Maximizing profitability extends beyond the harvest. We establish post-harvest processing and value-addition units for products like cold-pressed oils and packaged goods. This strategy captures more of the value chain for our clients, creating premium, market-ready products.",
       mainImage:
-        "https://placehold.co/600x400/d97706/ffffff?text=Value+Addition",
+        "/images/portfolio/value.JPG",
       gallery: [
         "https://placehold.co/400x300/b45309/ffffff?text=Processing+Unit",
         "https://placehold.co/400x300/f59e0b/ffffff?text=Packaged+Products",
@@ -164,7 +164,7 @@ const Portfolio = () => {
     <>
       <main>
         {/* Header Section */}
-        <section className="page-header-bg text-white bg-[url(/images/port.jpg)] bg-cover bg-center">
+        <section className="page-header-bg text-white bg-[url(/images/portfolio/cover.JPG)] bg-cover bg-center">
           <div className="container mx-auto px-6 py-24 text-center bg-black/50">
             <h1 className="text-4xl md:text-5xl font-extrabold">
               Our Project Portfolio
@@ -190,9 +190,9 @@ const Portfolio = () => {
                     <img
                       src={project.mainImage}
                       alt={project.title}
-                      className="w-full h-56 object-cover"
+                      className="w-full h-56 object-cover bg-top"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300"></div>
+                    <div className="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300"></div>
                   </div>
                   <div className="p-6">
                     <p className="text-sm text-green-600 font-semibold mb-1">
@@ -209,7 +209,7 @@ const Portfolio = () => {
         </section>
 
         {/* Modal */}
-        {selectedProject && (
+        {/* {selectedProject && (
           <div
             className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50"
             onClick={() => setSelectedProject(null)}
@@ -247,7 +247,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </main>
 
       <Footer />

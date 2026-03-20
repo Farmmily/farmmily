@@ -147,7 +147,7 @@ const ManagedFarming = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/images/proudFarmer.png"
+                src="/images/managed.jpg"
                 alt="Hassle-free farming"
                 className="rounded-lg shadow-xl w-full h-auto"
               />

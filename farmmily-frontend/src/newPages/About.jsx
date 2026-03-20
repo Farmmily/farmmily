@@ -107,11 +107,10 @@ const ValuesCarousel = () => {
               <button
                 key={index}
                 onClick={() => setCurrentValue(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentValue
-                    ? "bg-gray-700 scale-125"
-                    : "bg-gray-400 hover:bg-gray-500"
-                }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentValue
+                  ? "bg-gray-700 scale-125"
+                  : "bg-gray-400 hover:bg-gray-500"
+                  }`}
               />
             ))}
           </div>
@@ -133,7 +132,7 @@ const AboutUsPage = () => {
     <>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="page-header-bg text-white bg-[url(/images/about_us.png)] bg-cover bg-center">
+        <section className="page-header-bg text-white bg-[url(/images/about.JPG)] bg-cover bg-center">
           <div className="container mx-auto px-4 sm:px-6 py-20 sm:py-24 text-center bg-black/50">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
               About Farmmily Agro Infra Developers Pvt Ltd
@@ -171,11 +170,10 @@ const AboutUsPage = () => {
           <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div
-                className={`bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-500 transform ${
-                  isVisible
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-8 opacity-0"
-                }`}
+                className={`bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-500 transform ${isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-8 opacity-0"
+                  }`}
                 style={{ transitionDelay: "200ms" }}
               >
                 <div className="text-center">
@@ -194,11 +192,10 @@ const AboutUsPage = () => {
               </div>
 
               <div
-                className={`bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-500 transform ${
-                  isVisible
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-8 opacity-0"
-                }`}
+                className={`bg-white p-6 sm:p-8 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-500 transform ${isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-8 opacity-0"
+                  }`}
                 style={{ transitionDelay: "400ms" }}
               >
                 <div className="text-center">
@@ -335,11 +332,10 @@ const AboutUsPage = () => {
               ].map((value, index) => (
                 <div
                   key={index}
-                  className={`bg-white p-4 sm:p-6 rounded-xl text-center border border-gray-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group ${
-                    isVisible
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-4 opacity-0"
-                  }`}
+                  className={`bg-white p-4 sm:p-6 rounded-xl text-center border border-gray-200 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group ${isVisible
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-4 opacity-0"
+                    }`}
                   style={{ transitionDelay: `${600 + index * 100}ms` }}
                 >
                   <div

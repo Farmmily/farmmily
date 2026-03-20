@@ -113,8 +113,8 @@ const Insights = () => {
     <>
       <main>
         {/* Header */}
-        <section className="bg-[url('/images/insights/hero.png')] bg-cover bg-center text-white relative">
-          <div className="absolute inset-0 bg-black/60" />
+        <section className="bg-[url('/images/insights.jpg')] bg-cover bg-center text-white relative">
+          <div className="absolute inset-0 bg-black/20" />
           <div className="relative container mx-auto px-6 py-24 text-center">
             <motion.h1
               className="text-4xl md:text-5xl font-extrabold mb-4"
