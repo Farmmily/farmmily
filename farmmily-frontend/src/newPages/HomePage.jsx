@@ -48,7 +48,7 @@ const Home = () => {
     <>
       <main className="font-sans">
         {/* Hero Section */}
-        <section className="hero-bg relative text-white bg-[url('/images/bg-image.jpg')] bg-cover bg-center">
+        <section className="hero-bg relative text-white bg-[url('/images/home_new/home.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative container mx-auto px-6 py-32 md:py-48 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in">
@@ -126,9 +126,9 @@ const Home = () => {
               </div>
               <div>
                 <img
-                  src="/images/home_new/mandate.png"
+                  src="/images/home_new/1.jpg"
                   alt="Our Process"
-                  className="rounded-lg shadow-xl w-full md:h-128 object-fit"
+                  className="rounded-lg shadow-xl w-full md:h-128 object-cover"
                 />
               </div>
             </div>
@@ -236,7 +236,7 @@ const Home = () => {
               </div>
               <div>
                 <img
-                  src="/images/home_new/timberwood.png"
+                  src="/images/home_new/timber.jpg"
                   alt="Mahogany Plantation"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
@@ -291,7 +291,7 @@ const Home = () => {
               </div>
               <div>
                 <img
-                  src="images/home_new/foods.png"
+                  src="images/home_new/food.jpg"
                   alt="Farmmily Foods"
                   className="rounded-lg shadow-xl w-full h-auto"
                 />

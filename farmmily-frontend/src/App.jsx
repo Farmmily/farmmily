@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./newPages/HomePage";
-import Login from "./pages/Auth/Login";
-import Register from "./pages/Auth/Register";
+// import Login from "./pages/Auth/Login";
+// import Register from "./pages/Auth/Register";
 import Products from "./pages/Products/Products";
 import TreeDetails from "./pages/Trees/TreeDetails";
 import Orders from "./pages/Orders/Orders";
@@ -28,9 +28,8 @@ import ManagedFarming from "./newPages/ManagedFarming";
 import Team from "./newPages/Team";
 import Insights from "./newPages/Insights";
 function App() {
-  const wpLink = `${import.meta.env.VITE_WHATSAPP_URI}${
-    import.meta.env.VITE_WHATSAPP_NUMBER
-  }`;
+  const wpLink = `${import.meta.env.VITE_WHATSAPP_URI}${import.meta.env.VITE_WHATSAPP_NUMBER
+    }`;
   const whatSappNumber = `${import.meta.env.VITE_WHATSAPP_NUMBER}`;
   return (
     <Router>

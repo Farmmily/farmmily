@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+// import { useAuth } from "../context/AuthContext";
 import { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -57,9 +57,8 @@ const Navbar = () => {
 
       {/* Nav Links */}
       <div
-        className={`absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:flex md:items-center md:justify-center transition-all duration-300 ${
-          menuOpen ? "block" : "hidden md:flex"
-        }`}
+        className={`absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent md:flex md:items-center md:justify-center transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"
+          }`}
       >
         <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-6 px-6 py-4 md:p-0">
           {navItems.map(({ label, path }) => (
