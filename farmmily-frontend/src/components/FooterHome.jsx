@@ -81,40 +81,43 @@ export default function Footer() {
         </div>
       </footer>
 
-      <div className="bg-[#126a3f] text-gray-100 text-sm px-6 sm:px-16 py-3 flex flex-col sm:flex-row justify-between items-center font-sans mt-4">
-        <span>© Farmmily 2025, All right reserved.</span>
-        <div className="flex space-x-4 mt-2 sm:mt-0">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="https://instagram.com/farmmily"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white"
-          >
-            <FaTwitter />
-          </a>
+      <div className="bg-[#126a3f] text-gray-100 text-xs sm:text-sm px-6 sm:px-16 py-3 flex flex-col sm:flex-row justify-between items-center font-sans mt-4">
+        <span>© 2026 Farmmily Agro Infra Developers Pvt Ltd. All Rights Reserved.</span>
+        <div className="flex space-x-3 mt-2 sm:mt-0 text-xs">
           <a
             href="https://www.linkedin.com/company/farmmily/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white"
+            className="hover:text-white flex items-center gap-1 text-xs"
           >
-            <FaLinkedinIn />
+            <FaLinkedinIn className="text-xs" />
+            <span className="text-xs">LinkedIn</span>
+          </a>
+          <a
+            href="https://www.instagram.com/farmmily_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white flex items-center gap-1 text-xs"
+          >
+            <FaInstagram className="text-xs" />
+            <span className="text-xs">Instagram</span>
+          </a>
+          <a
+            href="https://www.facebook.com/p/Farmmily-61574169628061/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white flex items-center gap-1 text-xs"
+          >
+            <FaFacebookF className="text-xs" />
+            <span className="text-xs">Facebook</span>
+          </a>
+          <a
+            href="https://www.youtube.com/@FARMMILYAGROINFRADEVELOPERS/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white flex items-center gap-1 text-xs"
+          >
+            <span className="text-xs">YouTube</span>
           </a>
         </div>
       </div>

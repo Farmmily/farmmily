@@ -27,6 +27,8 @@ import Portfolio from "./newPages/Portfolio";
 import ManagedFarming from "./newPages/ManagedFarming";
 import Team from "./newPages/Team";
 import Insights from "./newPages/Insights";
+import ScrollToTop from "./newComponents/ScrollToTop";
+
 function App() {
   const wpLink = `${import.meta.env.VITE_WHATSAPP_URI}${import.meta.env.VITE_WHATSAPP_NUMBER
     }`;
@@ -34,6 +36,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <div className="mt-20"></div>
       <Routes>
         {/* Public Routes */}

@@ -183,16 +183,16 @@ const Portfolio = () => {
               {portfolioData.map((project, index) => (
                 <div
                   key={index}
-                  onClick={() => setSelectedProject(project)}
                   className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer group transition-transform hover:-translate-y-1"
                 >
                   <div className="relative">
                     <img
                       src={project.mainImage}
                       alt={project.title}
-                      className="w-full h-56 object-cover bg-top"
+                      onClick={() => setSelectedProject(project)}
+                      className="w-full h-56 object-cover bg-top cursor-pointer"
                     />
-                    <div className="absolute inset-0  bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300"></div>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
                   </div>
                   <div className="p-6">
                     <p className="text-sm text-green-600 font-semibold mb-1">
@@ -208,46 +208,63 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Modal */}
-        {/* {selectedProject && (
+        {/* Lightbox Modal */}
+        {selectedProject && (
           <div
             className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50"
             onClick={() => setSelectedProject(null)}
           >
             <div
-              className="bg-white rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto transform scale-100"
+              className="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="p-6 md:p-8">
-                <div className="flex justify-between items-start">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <div className="flex justify-between items-start p-5 border-b border-gray-200">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900">
                     {selectedProject.title}
                   </h2>
-                  <button
-                    onClick={() => setSelectedProject(null)}
-                    className="text-gray-500 hover:text-gray-800 text-3xl"
-                  >
-                    &times;
-                  </button>
+                  <p className="text-sm text-green-700 mt-1">
+                    {selectedProject.category}
+                  </p>
                 </div>
-                <p className="text-gray-600 mb-6">
+                <button
+                  onClick={() => setSelectedProject(null)}
+                  className="text-gray-700 hover:text-gray-900 text-3xl leading-none"
+                  aria-label="Close lightbox"
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="p-5">
+                <img
+                  src={selectedProject.mainImage}
+                  alt={selectedProject.title}
+                  className="w-full h-96 object-cover rounded-lg mb-4"
+                />
+                <p className="text-gray-700 leading-relaxed mb-4">
                   {selectedProject.description}
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {selectedProject.gallery.map((img, idx) => (
-                    <div key={idx} className="overflow-hidden rounded-lg">
-                      <img
-                        src={img}
-                        alt={`${selectedProject.title} gallery`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
+                {selectedProject.gallery?.length > 0 && (
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    {selectedProject.gallery.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setSelectedProject({ ...selectedProject, mainImage: img })}
+                        className="group overflow-hidden rounded-lg border border-gray-200"
+                      >
+                        <img
+                          src={img}
+                          alt={`${selectedProject.title} gallery ${idx + 1}`}
+                          className="w-full h-24 object-cover group-hover:opacity-80"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
-        )} */}
+        )}
       </main>
 
       <Footer />

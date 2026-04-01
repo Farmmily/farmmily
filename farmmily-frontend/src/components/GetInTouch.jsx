@@ -30,51 +30,37 @@ const GetInTouch = () => {
           </p>
 
           <form
-            action="https://formsubmit.co/amrurthkwarrier@gmail.com"
+            action="https://formsubmit.co/info.farmmily@gmail.com"
             method="POST"
             className="space-y-4"
           >
-            {/* First and Last Name */}
-            <div className="flex flex-col md:flex-row gap-4">
-              <input
-                type="text"
-                name="first_name"
-                placeholder="First Name"
-                required
-                className="w-full p-2 border border-gray-300 rounded bg-white"
-              />
-              <input
-                type="text"
-                name="last_name"
-                placeholder="Last Name"
-                required
-                className="w-full p-2 border border-gray-300 rounded bg-white"
-              />
-            </div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+              className="w-full p-2 border border-gray-300 rounded bg-white"
+            />
 
-            {/* Email */}
+            <input
+              type="tel"
+              name="whatsapp"
+              placeholder="WhatsApp Number (required)"
+              required
+              className="w-full p-2 border border-gray-300 rounded bg-white"
+            />
+
             <input
               type="email"
               name="email"
-              placeholder="Email"
-              required
+              placeholder="Email (optional)"
               className="w-full p-2 border border-gray-300 rounded bg-white"
             />
 
-            {/* Phone */}
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              className="w-full p-2 border border-gray-300 rounded bg-white"
-            />
-
-            {/* Message */}
             <textarea
               name="message"
               rows="4"
-              placeholder="Message"
-              required
+              placeholder="Message (optional)"
               className="w-full p-2 border border-gray-300 rounded bg-white"
             ></textarea>
 
@@ -101,11 +87,10 @@ const GetInTouch = () => {
             <button
               type="submit"
               disabled={!agreed}
-              className={`mt-4 px-6 py-2 text-white rounded transition-all ${
-                agreed
+              className={`mt-4 px-6 py-2 text-white rounded transition-all ${agreed
                   ? "bg-green-700 hover:bg-green-800"
                   : "bg-gray-400 cursor-not-allowed"
-              }`}
+                }`}
             >
               Send Message
             </button>
@@ -157,9 +142,8 @@ const GetInTouch = () => {
 
             {/* WhatsApp Button */}
             <a
-              href={`${import.meta.env.VITE_WHATSAPP_URI}${
-                import.meta.env.VITE_WHATSAPP_NUMBER
-              }?text=${encodedMessage}`}
+              href={`${import.meta.env.VITE_WHATSAPP_URI}${import.meta.env.VITE_WHATSAPP_NUMBER
+                }?text=${encodedMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"

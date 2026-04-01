@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-gray-800 text-white">
-        <div className="container mx-auto px-6 py-12">
+      <footer className="bg-gray-800 text-white text-xs sm:text-sm">
+        <div className="container mx-auto px-6 py-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-1">
               <img
@@ -51,12 +51,46 @@ const Footer = () => {
               <h3 className="font-semibold mb-4">Contact</h3>
               <p className="text-gray-400">+91 77088 47977</p>
               <p className="text-gray-400">contact@farmmily.com</p>
+
+              <div className="flex items-center gap-3 mt-4 text-gray-300 text-xs sm:text-sm">
+                <a
+                  href="https://www.linkedin.com/company/farmmily/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white flex items-center gap-1 text-xs sm:text-sm"
+                >
+                  <span className="text-xs sm:text-sm">LinkedIn</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/farmmily_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white flex items-center gap-1 text-xs sm:text-sm"
+                >
+                  <span className="text-xs sm:text-sm">Instagram</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/p/Farmmily-61574169628061/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white flex items-center gap-1 text-xs sm:text-sm"
+                >
+                  <span className="text-xs sm:text-sm">Facebook</span>
+                </a>
+                <a
+                  href="https://www.youtube.com/@FARMMILYAGROINFRADEVELOPERS/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white flex items-center gap-1 text-xs sm:text-sm"
+                >
+                  <span className="text-xs sm:text-sm">YouTube</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+          <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-xs sm:text-sm">
             <p>
-              &copy; 2025 Farmmily Agro Infra Developers Pvt Ltd. All Rights
-              Reserved.
+              © 2026 Farmmily Agro Infra Developers Pvt Ltd. All Rights Reserved.
             </p>
           </div>
         </div>
